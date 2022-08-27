@@ -9,12 +9,16 @@ body {
   padding: 20px;
   background-color: #9fb3c5;
   border-width: 10px;
+  border-color: #454549;
   margin-top: 50px;
   border-radius: 20px;
 }
-
+#search-bar {
+  border-width: 0px;
+  padding: 15px;
+}
 h1 {
-  color: #484894;
+  color: #fff;
   font-size: 150px;
 }
 h3 {
@@ -22,4 +26,9 @@ h3 {
 }
 div {
   border-width: 15px;
+}
+
+span {
+  text-align: right;
+  color: #fff;
 }
