@@ -13,10 +13,28 @@
     />
     <title>Weather Search</title>
   </head>
-  <div class="container">
-    <body>
-      <h1>00°</h1>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="city-name">
+          <h3>City</h3>
+        </div>
+        <div class="col-4"></div>
+        <div class="col">
+          <form>
+            <input type="text" placeholder="Search here" id="search-text" />
+            <input type="submit" value="search" />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1>00°</h1>
+        </div>
+      </div>
+
       <script src="app.js"></script>
-    </body>
-  </div>
+    </div>
+  </body>
 </html>
