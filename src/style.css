@@ -1,5 +1,5 @@
-body {
-  background-color: #454549;
+.body {
+  background-color: #9fb3c5;
   display: block;
   margin: auto;
 }
@@ -7,9 +7,7 @@ body {
 .container {
   width: 300px;
   padding: 30px;
-  background-color: #9fb3c5;
-  border-width: 10px;
-  border-color: #454549;
+  background-color: #454549;
   margin-top: 50px;
   border-radius: 20px;
 }
@@ -18,7 +16,17 @@ body {
   padding: 15px;
 }
 #city-name {
+  color: #9fb3c5;
+  font-weight: bold;
+  font-size: 40px;
   padding-left: 25px;
+  text-decoration: underline white;
+}
+#country-name {
+  font-size: 25px;
+  padding-left: 25px;
+  color: #9fb3c5;
+  font-weight: bold;
 }
 #weather-icon {
   font-size: 80px;
@@ -31,6 +39,8 @@ body {
 }
 .condition {
   padding-left: 25px;
+  color: #9fb3c5;
+  font-weight: bold;
 }
 h4 {
   font-size: 100px;
@@ -47,11 +57,16 @@ div {
 .search-btn {
   border: none;
   background-color: none;
+  margin: 0px;
 }
 .date,
-.time {
+.time,
+.wind,
+.humidity {
   font-size: 20px;
-  padding: 15px;
+  padding: 7px;
   text-align: right;
   color: #fff;
+
+  font-weight: bold;
 }
