@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  padding: 20px;
+  width: 300px;
+  padding: 30px;
   background-color: #9fb3c5;
   border-width: 10px;
   border-color: #454549;
@@ -17,12 +17,20 @@ body {
   border-width: 0px;
   padding: 15px;
 }
-h1 {
-  color: #fff;
-  font-size: 150px;
+#city-name {
+  padding-left: 25px;
 }
-h3 {
-  font-size: 80px;
+
+.temperature {
+  color: #fff;
+  font-size: 125px;
+  padding-left: 25px;
+}
+.condition {
+  padding-left: 25px;
+}
+h4 {
+  font-size: 100px;
 }
 div {
   border-width: 15px;
