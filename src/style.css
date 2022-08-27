@@ -20,7 +20,10 @@ body {
 #city-name {
   padding-left: 25px;
 }
-
+#weather-icon {
+  font-size: 80px;
+  color: #fff;
+}
 .temperature {
   color: #fff;
   font-size: 125px;
@@ -35,8 +38,17 @@ h4 {
 div {
   border-width: 15px;
 }
+#conversion {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 30px;
+}
 
-span {
+.date,
+.time {
+  font-size: 20px;
+  padding: 15px;
   text-align: right;
   color: #fff;
 }
