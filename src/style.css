@@ -44,7 +44,10 @@ div {
   font-size: 25px;
   padding-top: 30px;
 }
-
+.search-btn {
+  border: none;
+  background-color: none;
+}
 .date,
 .time {
   font-size: 20px;
