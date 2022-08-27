@@ -3,9 +3,10 @@
   display: block;
   margin: auto;
 }
-
+#app-face {
+  width: 600px;
+}
 .container {
-  width: 300px;
   padding: 30px;
   background-color: #454549;
   margin-top: 50px;
