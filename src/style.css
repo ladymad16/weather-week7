@@ -71,3 +71,7 @@ div {
 
   font-weight: bold;
 }
+.stats {
+  color: #fff;
+  text-align: right;
+}
