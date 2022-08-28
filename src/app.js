@@ -48,6 +48,7 @@ function displayWeather(response) {
   let dateElement = document.querySelector(".date");
   let timeElement = document.querySelector(".time");
   let iconElement = document.querySelector("#weather-icon");
+  metricTemp = response.data.main.temp;
   temperatureMain.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   conditionElement.innerHTML = response.data.weather[0].main;
@@ -65,7 +66,7 @@ function displayWeather(response) {
 
 function search(city) {
   let apiKey = "1eefbb06c86a0d46a195a5f586c20304";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
 
@@ -76,7 +77,31 @@ function searchCity(event) {
   console.log(citySearch.value);
 }
 search("New York");
-//
+
+function showImperialTemp(event) {
+  event.preventDefault();
+  let imperialTemp = (metricTemp * 9) / 5 + 32;
+  let tempElement = document.querySelector(".temperature");
+  tempElement.innerHTML = Math.round(imperialTemp);
+  metricLink.classList.remove("active");
+  imperialLink.classList.add("active");
+}
+
+function showMetricTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector(".temperature");
+  tempElement.innerHTML = Math.round(metricTemp);
+  metricLink.classList.add("active");
+  imperialLink.classList.remove("active");
+}
+
+let metricTemp = null;
 
 let form = document.querySelector(".input-group-text");
 form.addEventListener("submit", searchCity);
+
+let imperialLink = document.querySelector("#f-link");
+imperialLink.addEventListener("click", showImperialTemp);
+
+let metricLink = document.querySelector("#c-link");
+metricLink.addEventListener("click", showMetricTemp);

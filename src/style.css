@@ -84,6 +84,18 @@ div {
   text-align: center;
 }
 
+#c-link,
+#f-link {
+  text-decoration: none;
+  color: #9fb3c5;
+}
+
+.active {
+  cursor: default;
+  color: #9fb3c5;
+  text-decoration: none;
+}
+
 #credit {
   font-size: 12px;
   text-align: center;
