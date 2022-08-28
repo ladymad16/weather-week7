@@ -61,17 +61,24 @@ div {
   margin: 0px;
 }
 .date,
-.time,
+.time {
+  font-size: 20px;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+
+  font-weight: bold;
+}
 .wind,
 .humidity {
   font-size: 20px;
-  padding: 7px;
-  text-align: right;
+
+  text-align: center;
   color: #fff;
 
   font-weight: bold;
 }
 .stats {
   color: #fff;
-  text-align: right;
+  text-align: center;
 }
