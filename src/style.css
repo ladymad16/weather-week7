@@ -5,6 +5,7 @@
 }
 #app-face {
   width: 700px;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 216, 108));
 }
 #weather-icon {
   width: 120px;
@@ -25,7 +26,7 @@
   font-weight: bold;
   font-size: 40px;
   padding-left: 25px;
-  text-decoration: underline white;
+  text-decoration: underline rgb(255, 216, 108);
 }
 #country-name {
   font-size: 25px;
@@ -64,7 +65,7 @@ div {
 .date,
 .time {
   font-size: 20px;
-  padding: 7px;
+  padding: 2px;
   text-align: center;
   color: #fff;
 
@@ -73,7 +74,7 @@ div {
 .wind,
 .humidity {
   font-size: 20px;
-
+  padding: 10px;
   text-align: center;
   color: #fff;
 
@@ -101,4 +102,9 @@ div {
   text-align: center;
   display: block;
   margin: auto;
+  padding: 10px;
+}
+
+.fa-magnifying-glass {
+  padding-right: 10px;
 }
