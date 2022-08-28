@@ -62,8 +62,21 @@ function displayWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-let cityName = "charlotte";
-let apiKey = "1eefbb06c86a0d46a195a5f586c20304";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;
 
-axios.get(apiUrl).then(displayWeather);
+function search(city) {
+  let apiKey = "1eefbb06c86a0d46a195a5f586c20304";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
+function searchCity(event) {
+  event.preventDefault();
+  let citySearch = document.querySelector("#search-input");
+  search(citySearch.value);
+  console.log(citySearch.value);
+}
+search("New York");
+//
+
+let form = document.querySelector(".input-group-text");
+form.addEventListener("submit", searchCity);
