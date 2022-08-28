@@ -32,6 +32,7 @@ function displayWeather(response) {
   let countryName = document.querySelector("#country-name");
   let dateElement = document.querySelector(".date");
   let timeElement = document.querySelector(".time");
+  let iconElement = document.querySelector("#weather-icon");
   temperatureMain.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   conditionElement.innerHTML = response.data.weather[0].main;
@@ -40,8 +41,12 @@ function displayWeather(response) {
   countryName.innerHTML = response.data.sys.country;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   timeElement.innerHTML = formatTime(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
-let cityName = "Paris";
+let cityName = "charlotte";
 let apiKey = "1eefbb06c86a0d46a195a5f586c20304";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;
 

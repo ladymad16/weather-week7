@@ -4,11 +4,15 @@
   margin: auto;
 }
 #app-face {
-  width: 600px;
+  width: 700px;
+}
+#weather-icon {
+  width: 120px;
+  padding: none;
 }
 .container {
   padding: 30px;
-  background-color: #454549;
+  background-color: #646464;
   margin-top: 50px;
   border-radius: 20px;
 }
@@ -29,10 +33,7 @@
   color: #9fb3c5;
   font-weight: bold;
 }
-#weather-icon {
-  font-size: 80px;
-  color: #fff;
-}
+
 .temperature {
   color: #fff;
   font-size: 125px;
