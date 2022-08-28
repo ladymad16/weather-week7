@@ -83,3 +83,10 @@ div {
   color: #fff;
   text-align: center;
 }
+
+#credit {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  margin: auto;
+}

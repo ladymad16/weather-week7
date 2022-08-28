@@ -1,6 +1,19 @@
 function formatDate() {
   let date = new Date();
-
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   let days = [
     "Sunday",
     "Monday",
@@ -11,7 +24,9 @@ function formatDate() {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day}`;
+  let month = months[date.getMonth()];
+  let num = date.getDate();
+  return `${day}, ${month} ${num}`;
 }
 
 function formatTime(timestamp) {
@@ -45,6 +60,7 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 let cityName = "charlotte";
 let apiKey = "1eefbb06c86a0d46a195a5f586c20304";
