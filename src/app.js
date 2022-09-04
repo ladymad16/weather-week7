@@ -42,6 +42,33 @@ function formatTime(timestamp) {
   return `${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHtml = `<div class="card-group" id="forecast-card">`;
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="card"><img
+        src="http://openweathermap.org/img/wn/03d@2x.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h6 class="forecast-card" id="forecast-1">
+          ${day}
+        </h6>
+        <span class="forecast-max-temp">00</span>
+        <span class="forecast-min-temp">00</span>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div></div>`;
+  });
+  forecastHtml = forecastHtml + `</div>`;
+  forecastElement.innerHTML = forecastHtml;
+}
+
 function displayWeather(response) {
   console.log(response.data);
   let temperatureMain = document.querySelector(".temperature");
@@ -99,6 +126,8 @@ function showMetricTemp(event) {
   metricLink.classList.add("active");
   imperialLink.classList.remove("active");
 }
+
+displayForecast();
 
 let metricTemp = null;
 
