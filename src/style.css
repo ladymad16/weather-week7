@@ -108,3 +108,21 @@ div {
 .fa-magnifying-glass {
   padding-right: 10px;
 }
+
+.card {
+  color: #9fb3c5;
+  background-color: #646464;
+}
+.card-footer {
+  background-color: #9fb3c5;
+}
+.card-group {
+  padding: 15px;
+  background-color: #646469;
+  border-radius: 20px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 10px;
+}
