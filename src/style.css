@@ -126,3 +126,15 @@ div {
   text-align: center;
   padding: 5px;
 }
+#icons {
+  width: 50px;
+  display: block;
+  margin: auto;
+  filter: drop-shadow(0 0 0.75rem rgb(59, 58, 59));
+  padding-top: 15px;
+}
+
+.text-muted,
+.card-footer {
+  text-align: center;
+}
