@@ -35,7 +35,7 @@
   font-weight: bold;
 }
 
-.temperature {
+#main-temp {
   color: #fff;
   font-size: 125px;
   padding-left: 25px;
@@ -103,6 +103,12 @@ div {
   display: block;
   margin: auto;
   padding: 10px;
+  color: #fff;
+}
+
+#credit-link {
+  color: rgb(255, 216, 108);
+  text-decoration: none;
 }
 
 .fa-magnifying-glass {
@@ -127,7 +133,7 @@ div {
   padding: 5px;
 }
 #icons {
-  width: 50px;
+  width: 70px;
   display: block;
   margin: auto;
   filter: drop-shadow(0 0 0.75rem rgb(59, 58, 59));
@@ -137,4 +143,8 @@ div {
 .text-muted,
 .card-footer {
   text-align: center;
+}
+
+#forecast-1 {
+  font-size: 25px;
 }

@@ -69,10 +69,10 @@ function displayForecast(response) {
         <h6 class="forecast-card" id="forecast-1">
           ${formatDay(forecastDay.dt)}
         </h6>
-        <span class="forecast-max-temp">${Math.round(
+        <span class="temperature" id="forecast-max-temp">${Math.round(
           forecastDay.temp.max
         )}°</span> | 
-        <span class="forecast-min-temp">${Math.round(
+        <span class="temperature" id="forecast-min-temp">${Math.round(
           forecastDay.temp.min
         )}°</span>
       </div>
