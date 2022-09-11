@@ -127,7 +127,6 @@ function searchCity(event) {
   event.preventDefault();
   let citySearch = document.querySelector("#search-input");
   search(citySearch.value);
-  console.log(citySearch.value);
 }
 search("New York");
 
