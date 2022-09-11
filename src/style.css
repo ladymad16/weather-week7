@@ -1,19 +1,19 @@
 .body {
-  background-color: #9fb3c5;
+  background-color: #e6d2aa;
   display: block;
   margin: auto;
 }
 #app-face {
   width: 700px;
-  filter: drop-shadow(0 0 0.75rem rgb(255, 216, 108));
+  filter: drop-shadow(0 0 0.75rem rgb(211, 107, 0));
 }
 #weather-icon {
-  width: 120px;
+  width: 130px;
   padding: none;
 }
 .container {
   padding: 30px;
-  background-color: #646464;
+  background-color: #42032c;
   margin-top: 50px;
   border-radius: 20px;
 }
@@ -22,16 +22,16 @@
   padding: 15px;
 }
 #city-name {
-  color: #9fb3c5;
+  color: #f1efdc;
   font-weight: bold;
   font-size: 40px;
   padding-left: 25px;
-  text-decoration: underline rgb(255, 216, 108);
+  text-decoration: underline rgb(211, 107, 0);
 }
 #country-name {
   font-size: 25px;
   padding-left: 25px;
-  color: #9fb3c5;
+  color: #e6d2aa;
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@
 }
 .condition {
   padding-left: 25px;
-  color: #9fb3c5;
+  color: #f1efdc;
   font-weight: bold;
 }
 h4 {
@@ -88,12 +88,12 @@ div {
 #c-link,
 #f-link {
   text-decoration: none;
-  color: #9fb3c5;
+  color: #d36b00;
 }
 
 .active {
   cursor: default;
-  color: #9fb3c5;
+  color: #f1efdc;
   text-decoration: none;
 }
 
@@ -115,16 +115,12 @@ div {
   padding-right: 10px;
 }
 
-.card {
-  color: #9fb3c5;
-  background-color: #646464;
-}
 .card-footer {
-  background-color: #9fb3c5;
+  background-color: #f1efdc;
 }
 .card-group {
   padding: 15px;
-  background-color: #646469;
+  background-color: #42032c;
   border-radius: 20px;
 }
 
